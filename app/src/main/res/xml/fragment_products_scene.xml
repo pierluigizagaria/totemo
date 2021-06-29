@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/textBackground" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/textBackground" />
+            <KeyAttribute
+                motion:framePosition="100"
+                motion:motionTarget="@+id/productTitle" />
+        </KeyFrameSet>
+        <OnSwipe motion:touchAnchorId="@+id/productList" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/productTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            motion:layout_constraintBottom_toTopOf="@id/textBarrier"
+            motion:layout_constraintEnd_toStartOf="@+id/rightItemsGuideline"
+            motion:layout_constraintHeight_percent="0.04"
+            motion:layout_constraintStart_toStartOf="@+id/leftItemsGuideline"
+            motion:layout_constraintTop_toTopOf="@+id/imageBackground" />
+        <Constraint
+            android:id="@+id/productList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/rightItemsGuideline"
+            motion:layout_constraintStart_toStartOf="@+id/leftItemsGuideline"
+            motion:layout_constraintTop_toTopOf="@id/textBarrier" />
+    </ConstraintSet>
+</MotionScene>

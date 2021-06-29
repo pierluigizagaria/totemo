@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/productsCarousel">
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.pierluigizagaria.totemo.ui.fragments.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <argument
+            android:name="productName"
+            app:argType="string" />
+        <argument
+            android:name="ingredients"
+            app:argType="string[]" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsCarousel"
+        android:name="com.pierluigizagaria.totemo.ui.fragments.ProductsCarousel"
+        android:label="fragment_products_carousel"
+        tools:layout="@layout/fragment_products_carousel" >
+        <action
+            android:id="@+id/action_productsCarousel_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+</navigation>

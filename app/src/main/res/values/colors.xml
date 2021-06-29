@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#B52222</color>
+    <color name="red_alpha26">#42B52222</color>
+    <color name="black">#FF000000</color>
+    <color name="dark_gray">#0C0C0C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textSecondaryColor">?android:attr/textColorSecondary</color>
+</resources>

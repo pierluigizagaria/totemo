@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Totemo</string>
+    <string name="productsTitle">Prodotti</string>
+    <string name="product_list_img">Product name</string>
+    <string name="product_list_name">Lorem Ipsum</string>
+    <string name="arrow_icon">Arrow icon</string>
+    <string name="product_image">Product image</string>
+    <string name="back_button">Back button</string>
+    <string name="settings_qr_code">Settings QR code</string>
+    <string name="edit_products_bottom_sheet_exit_button">Fine</string>
+    <string name="qr_scan_tip">Scannerizza il codice QR e gestisci i prodotti del catalogo</string>
+    <string name="wifi_connection_error">Assicurati di essere connesso ad una rete Wi-Fi</string>
+    <string name="products_title">Prodotti</string>
+    <string name="ingredients_text">Ingredienti</string>
+    <string name="background_image">Background image</string>
+</resources>
